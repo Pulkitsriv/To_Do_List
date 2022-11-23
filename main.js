@@ -1,5 +1,4 @@
 const themeColors=document.querySelectorAll('[name="theme"]');
-//                                                     store themes
 const storeTheme=function(theme){
     localStorage.setItem('theme',theme);
 }
@@ -18,7 +17,6 @@ themeColors.forEach((themOption)=>{
     })
 })
 document.onload=applyTheme();
-//                                                   Add or Delete               ***IMP 
 var form=document.getElementById('addForm');
 var itemList=document.getElementById('items');
 form.addEventListener('submit',addEvent)
